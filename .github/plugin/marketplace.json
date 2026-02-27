@@ -1,11 +1,10 @@
 {
   "name": "sre-agent-plugins",
   "owner": {
-    "name": "Azure",
-    "email": "azurecopilot@microsoft.com"
+    "name": "Azure"
   },
   "metadata": {
-    "description": "Azure SRE Agent plugins for GitHub Copilot CLI",
+    "description": "Azure SRE Agent plugins",
     "version": "1.0.0"
   },
   "plugins": []

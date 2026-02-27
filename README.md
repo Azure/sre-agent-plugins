@@ -1,27 +1,7 @@
 # sre-agent-plugins
 Azure SRE Agent Plugins
 
-A plugin marketplace for [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace).
-
-## Usage
-
-Register this marketplace with Copilot CLI:
-
-```sh
-copilot plugin marketplace add Azure/sre-agent-plugins
-```
-
-Browse available plugins:
-
-```sh
-copilot plugin marketplace browse sre-agent-plugins
-```
-
-Install a plugin:
-
-```sh
-copilot plugin install PLUGIN-NAME@sre-agent-plugins
-```
+> **Note:** These plugins are designed for use with the [Azure SRE Agent](https://azure.microsoft.com/) and may not work with other coding agents.
 
 ## Adding plugins
 
