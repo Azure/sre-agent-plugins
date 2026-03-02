@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "dynatrace-mcp": {
+      "type": "http",
+      "url": "https://{TENANT_NAME}.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+      "headers": {
+        "Authorization": "Bearer {your-platform-token}"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "elasticsearch": {
+      "type": "http",
+      "url": "https://{KIBANA_URL}/api/agent_builder/mcp",
+      "headers": {
+        "Authorization": "ApiKey {your-api-key}"
+      }
+    }
+  }
+}

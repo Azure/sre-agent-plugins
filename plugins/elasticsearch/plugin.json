@@ -1,0 +1,7 @@
+{
+  "name": "elasticsearch",
+  "description": "Elasticsearch integration for Azure SRE Agent, providing structured access to Elasticsearch clusters for querying logs, analyzing metrics, and checking cluster health.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "pager-duty",
+  "description": "PagerDuty integration for Azure SRE Agent, providing structured access to PagerDuty's incident management platform.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

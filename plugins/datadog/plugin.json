@@ -1,0 +1,7 @@
+{
+  "name": "datadog",
+  "description": "Datadog integration for Azure SRE Agent, providing structured access to Datadog's monitoring and analytics platform.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "atlassian-rovo",
+  "description": "Atlassian integration for Azure SRE Agent, enabling seamless interaction with Atlassian's suite of tools such as Jira, Confluence, Compass, and Jira Service Management.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "dynatrace",
+  "description": "Dynatrace integration for Azure SRE Agent, providing structured access to Dynatrace's observability platform for logs, metrics, problems, and vulnerabilities.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

@@ -1,7 +1,7 @@
 # sre-agent-plugins
 Azure SRE Agent Plugins
 
-> **Note:** These plugins are designed for use with the [Azure SRE Agent](https://azure.microsoft.com/) and may not work with other coding agents.
+> **Note:** These plugins are designed for use with the [Azure SRE Agent](https://azure.microsoft.com/en-us/products/sre-agent) and may not work with other coding agents.
 
 ## Adding plugins
 

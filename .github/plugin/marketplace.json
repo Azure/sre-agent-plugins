@@ -7,5 +7,31 @@
     "description": "Azure SRE Agent plugins",
     "version": "1.0.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "datadog",
+      "description": "Datadog integration for Azure SRE Agent, providing structured access to Datadog's monitoring and analytics platform.",
+      "source": "./plugins/datadog"
+    },
+    {
+      "name": "atlassian-rovo",
+      "description": "Atlassian integration for Azure SRE Agent, enabling seamless interaction with Atlassian's suite of tools such as Jira, Confluence, Compass, and Jira Service Management.",
+      "source": "./plugins/atlassian-rovo"
+    },
+    {
+      "name": "pager-duty",
+      "description": "PagerDuty integration for Azure SRE Agent, providing structured access to PagerDuty's incident management platform.",
+      "source": "./plugins/pager-duty"
+    },
+    {
+      "name": "elasticsearch",
+      "description": "Elasticsearch integration for Azure SRE Agent, providing structured access to Elasticsearch clusters for querying logs, analyzing metrics, and checking cluster health.",
+      "source": "./plugins/elasticsearch"
+    },
+    {
+      "name": "dynatrace",
+      "description": "Dynatrace integration for Azure SRE Agent, providing structured access to Dynatrace's observability platform for logs, metrics, problems, and vulnerabilities.",
+      "source": "./plugins/dynatrace"
+    }
+  ]
 }
