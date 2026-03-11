@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "azure-managed-grafana": {
+      "type": "http",
+      "url": "https://<grafana-endpoint>/api/azure-mcp",
+      "headers": {
+        "Authorization": "Bearer <your-grafana-service-account-token-or-entra-id-token>"
+      }
+    }
+  }
+}

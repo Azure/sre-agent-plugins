@@ -32,6 +32,16 @@
       "name": "dynatrace",
       "description": "Dynatrace integration for Azure SRE Agent, providing structured access to Dynatrace's observability platform for logs, metrics, problems, and vulnerabilities.",
       "source": "./plugins/dynatrace"
+    },
+    {
+      "name": "aws",
+      "description": "AWS integration for Azure SRE Agent, providing secure access to AWS services including documentation, API calls, and operational procedures via the AWS MCP Server.",
+      "source": "./plugins/aws"
+    },
+    {
+      "name": "azure-managed-grafana",
+      "description": "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
+      "source": "./plugins/azure-managed-grafana"
     }
   ]
 }
