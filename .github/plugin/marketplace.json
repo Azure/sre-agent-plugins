@@ -42,6 +42,11 @@
       "name": "azure-managed-grafana",
       "description": "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
       "source": "./plugins/azure-managed-grafana"
+    },
+    {
+      "name": "hawkeye",
+      "description": "NeuBird Hawkeye integration for Azure SRE Agent, providing autonomous incident investigation, root cause analysis, and alert management via the Hawkeye MCP server.",
+      "source": "./plugins/hawkeye"
     }
   ]
 }

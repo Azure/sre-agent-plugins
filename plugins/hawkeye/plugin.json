@@ -1,0 +1,7 @@
+{
+  "name": "hawkeye",
+  "description": "NeuBird Hawkeye integration for Azure SRE Agent, providing autonomous incident investigation, root cause analysis, and alert management via the Hawkeye MCP server.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}
