@@ -1,0 +1,7 @@
+{
+  "name": "new-relic",
+  "description": "New Relic integration for Azure SRE Agent, enabling AI-driven access to New Relic's full-stack observability platform for entities, NRQL queries, alerts, logs, and performance analytics.",
+  "license": "MIT",
+  "skills": ["skills/"],
+  "mcpServers": ".mcp.json"
+}

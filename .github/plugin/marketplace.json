@@ -42,6 +42,11 @@
       "name": "azure-managed-grafana",
       "description": "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
       "source": "./plugins/azure-managed-grafana"
+    },
+    {
+      "name": "new-relic",
+      "description": "New Relic integration for Azure SRE Agent, enabling AI-driven access to New Relic's full-stack observability platform for entities, NRQL queries, alerts, logs, and performance analytics.",
+      "source": "./plugins/new-relic"
     }
   ]
 }
