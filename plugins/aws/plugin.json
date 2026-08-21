@@ -1,6 +1,6 @@
 {
   "name": "aws",
-  "description": "AWS integration for Azure SRE Agent, providing secure access to AWS services including documentation, API calls, and operational procedures via the AWS MCP Server.",
+  "description": "AWS integration for Azure SRE Agent, providing secure access to AWS services including documentation, API calls, operational procedures via the AWS MCP Server, and AI-powered incident investigation, root cause analysis, and interactive chat via the AWS DevOps Agent.",
   "license": "MIT",
   "skills": ["skills/"],
   "mcpServers": ".mcp.json"

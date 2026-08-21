@@ -1,6 +1,6 @@
 # AWS MCP Server Plugin
 
-Connects Azure SRE Agent to AWS services via the managed [AWS MCP Server](https://docs.aws.amazon.com/aws-mcp/), providing access to AWS documentation, API execution, and Agent SOPs (Standard Operating Procedures) for infrastructure management and troubleshooting.
+Connects Azure SRE Agent to AWS services via the managed [AWS MCP Server](https://docs.aws.amazon.com/aws-mcp/), providing access to AWS documentation, API execution, Agent SOPs (Standard Operating Procedures) for infrastructure management and troubleshooting, and the **AWS DevOps Agent** for AI-powered incident investigation, root cause analysis, and interactive operational chat.
 
 ## Endpoint
 
@@ -70,6 +70,60 @@ The IAM user or role used for the connector must have the following permissions:
 
 Additionally, the IAM principal needs permissions for the specific AWS services you want the agent to interact with. For example, to troubleshoot EC2 instances, add `ec2:Describe*` permissions.
 
+### DevOps Agent permissions
+
+To use the AWS DevOps Agent tools (investigations, chat, evaluations), the IAM principal also requires:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "devops-agent:ListAgentSpaces",
+        "devops-agent:GetAgentSpace",
+        "devops-agent:CreateAgentSpace",
+        "devops-agent:CreateInvestigation",
+        "devops-agent:GetTask",
+        "devops-agent:ListTasks",
+        "devops-agent:ListJournalRecords",
+        "devops-agent:ListExecutions",
+        "devops-agent:ListRecommendations",
+        "devops-agent:GetRecommendation",
+        "devops-agent:ListGoals",
+        "devops-agent:StartEvaluation",
+        "devops-agent:CreateChat",
+        "devops-agent:ListChats",
+        "devops-agent:SendMessage"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+| Permission | Purpose |
+|-----------|---------|
+| `devops-agent:ListAgentSpaces` | Discover available AgentSpaces |
+| `devops-agent:GetAgentSpace` | Retrieve AgentSpace details and ARN |
+| `devops-agent:CreateAgentSpace` | Create new AgentSpaces |
+| `devops-agent:CreateInvestigation` | Start automated incident investigations |
+| `devops-agent:GetTask` | Poll investigation task status |
+| `devops-agent:ListTasks` | List and filter investigations |
+| `devops-agent:ListJournalRecords` | Read root cause analysis findings |
+| `devops-agent:ListExecutions` | Audit investigation execution steps |
+| `devops-agent:ListRecommendations` | View mitigation recommendations |
+| `devops-agent:GetRecommendation` | Get full remediation specifications |
+| `devops-agent:ListGoals` | View evaluation quality goals |
+| `devops-agent:StartEvaluation` | Run quality evaluations on investigations |
+| `devops-agent:CreateChat` | Start interactive chat sessions |
+| `devops-agent:ListChats` | List recent chat sessions |
+| `devops-agent:SendMessage` | Send messages in chat sessions |
+
+> [!TIP]
+> For read-only investigation review, you can omit `CreateAgentSpace`, `CreateInvestigation`, `StartEvaluation`, `CreateChat`, and `SendMessage`.
+
 ## Add the connector in Azure portal
 
 1. Navigate to your SRE Agent resource
@@ -100,3 +154,7 @@ Once connected, your SRE Agent can:
 - **Follow Agent SOPs** — Use pre-built step-by-step procedures for common AWS tasks (VPC setup, serverless deployment, monitoring configuration)
 - **Check regional availability** — Verify which services and features are available in specific AWS regions
 - **Troubleshoot issues** — Analyze CloudWatch logs, CloudTrail events, and diagnose infrastructure problems
+- **Run automated investigations** — Start AI-powered incident investigations that correlate signals across CloudWatch, X-Ray, CloudTrail, and more to produce root cause analysis in 5–8 minutes
+- **Get remediation recommendations** — Receive actionable mitigation steps and full remediation runbooks from completed investigations
+- **Interactive operational chat** — Start real-time chat sessions with the AWS DevOps Agent for ad-hoc troubleshooting and operational questions
+- **Evaluate investigation quality** — Run evaluations against defined goals to assess investigation completeness and accuracy
