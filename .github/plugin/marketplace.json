@@ -42,6 +42,11 @@
       "name": "azure-managed-grafana",
       "description": "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
       "source": "./plugins/azure-managed-grafana"
+    },
+    {
+      "name": "azure-proactive-operations",
+      "description": "Proactive operations skills for Azure SRE Agent. Instruction-based skills that run structured assessments across Well-Architected Framework, compliance, capacity planning, FinOps, incident postmortems, Defender Secure Score, startup governance, and AI workload posture using built-in Azure tools.",
+      "source": "./plugins/azure-proactive-operations"
     }
   ]
 }

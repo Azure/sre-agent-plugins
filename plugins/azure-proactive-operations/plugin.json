@@ -1,0 +1,8 @@
+{
+  "name": "azure-proactive-operations",
+  "description": "Proactive operations skills for Azure SRE Agent. Instruction-based skills that use built-in Azure tools (RunAzCliReadCommands, execute_kusto_query) to run structured assessments across Well-Architected Framework, compliance, capacity planning, FinOps, incident postmortems, Defender Secure Score, startup governance, and AI/ML workload posture.",
+  "license": "MIT",
+  "skills": [
+    "skills/"
+  ]
+}
