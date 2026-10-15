@@ -1,0 +1,7 @@
+﻿{
+    "description":  "Assess Azure Service Health resource impact and resilience.",
+    "name":  "service-health-impact-mapper",
+    "skills":  [
+                   "skills/"
+               ]
+}

@@ -1,52 +1,57 @@
-{
-  "name": "sre-agent-plugins",
-  "owner": {
-    "name": "Azure"
-  },
-  "metadata": {
-    "description": "Azure SRE Agent plugins",
-    "version": "1.0.0"
-  },
-  "plugins": [
-    {
-      "name": "datadog",
-      "description": "Datadog integration for Azure SRE Agent, providing structured access to Datadog's monitoring and analytics platform.",
-      "source": "./plugins/datadog"
-    },
-    {
-      "name": "atlassian-rovo",
-      "description": "Atlassian integration for Azure SRE Agent, enabling seamless interaction with Atlassian's suite of tools such as Jira, Confluence, Compass, and Jira Service Management.",
-      "source": "./plugins/atlassian-rovo"
-    },
-    {
-      "name": "pager-duty",
-      "description": "PagerDuty integration for Azure SRE Agent, providing structured access to PagerDuty's incident management platform.",
-      "source": "./plugins/pager-duty"
-    },
-    {
-      "name": "elasticsearch",
-      "description": "Elasticsearch integration for Azure SRE Agent, providing structured access to Elasticsearch clusters for querying logs, analyzing metrics, and checking cluster health.",
-      "source": "./plugins/elasticsearch"
-    },
-    {
-      "name": "dynatrace",
-      "description": "Dynatrace integration for Azure SRE Agent, providing structured access to Dynatrace's observability platform for logs, metrics, problems, and vulnerabilities.",
-      "source": "./plugins/dynatrace"
-    },
-    {
-      "name": "aws",
-      "description": "AWS integration for Azure SRE Agent, providing secure access to AWS services including documentation, API calls, and operational procedures via the AWS MCP Server.",
-      "source": "./plugins/aws"
-    },
-    {
-      "name": "azure-managed-grafana",
-      "description": "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
-      "source": "./plugins/azure-managed-grafana"
-    },
-    {
-      "name": "azure-proactive-operations",
-      "description": "Proactive operations skills for Azure SRE Agent. Instruction-based skills that run structured assessments across Well-Architected Framework, compliance, capacity planning, FinOps, incident postmortems, Defender Secure Score, startup governance, and AI workload posture using built-in Azure tools.",
-      "source": "./plugins/azure-proactive-operations"
-    }
-  ]
+﻿{
+    "name":  "sre-agent-plugins",
+    "owner":  {
+                  "name":  "Azure"
+              },
+    "metadata":  {
+                     "description":  "Azure SRE Agent plugins",
+                     "version":  "1.0.0"
+                 },
+    "plugins":  [
+                    {
+                        "name":  "datadog",
+                        "description":  "Datadog integration for Azure SRE Agent, providing structured access to Datadog\u0027s monitoring and analytics platform.",
+                        "source":  "./plugins/datadog"
+                    },
+                    {
+                        "name":  "atlassian-rovo",
+                        "description":  "Atlassian integration for Azure SRE Agent, enabling seamless interaction with Atlassian\u0027s suite of tools such as Jira, Confluence, Compass, and Jira Service Management.",
+                        "source":  "./plugins/atlassian-rovo"
+                    },
+                    {
+                        "name":  "pager-duty",
+                        "description":  "PagerDuty integration for Azure SRE Agent, providing structured access to PagerDuty\u0027s incident management platform.",
+                        "source":  "./plugins/pager-duty"
+                    },
+                    {
+                        "name":  "elasticsearch",
+                        "description":  "Elasticsearch integration for Azure SRE Agent, providing structured access to Elasticsearch clusters for querying logs, analyzing metrics, and checking cluster health.",
+                        "source":  "./plugins/elasticsearch"
+                    },
+                    {
+                        "name":  "dynatrace",
+                        "description":  "Dynatrace integration for Azure SRE Agent, providing structured access to Dynatrace\u0027s observability platform for logs, metrics, problems, and vulnerabilities.",
+                        "source":  "./plugins/dynatrace"
+                    },
+                    {
+                        "name":  "aws",
+                        "description":  "AWS integration for Azure SRE Agent, providing secure access to AWS services including documentation, API calls, and operational procedures via the AWS MCP Server.",
+                        "source":  "./plugins/aws"
+                    },
+                    {
+                        "name":  "azure-managed-grafana",
+                        "description":  "Azure Managed Grafana integration for Azure SRE Agent, providing access to dashboards, Azure Monitor metrics, Application Insights, Azure Data Explorer, SQL Server, and Resource Graph queries via the built-in AMG-MCP endpoint.",
+                        "source":  "./plugins/azure-managed-grafana"
+                    },
+                    {
+                        "name":  "azure-proactive-operations",
+                        "description":  "Proactive operations skills for Azure SRE Agent. Instruction-based skills that run structured assessments across Well-Architected Framework, compliance, capacity planning, FinOps, incident postmortems, Defender Secure Score, startup governance, and AI workload posture using built-in Azure tools.",
+                        "source":  "./plugins/azure-proactive-operations"
+                    },
+                    {
+                        "description":  "Assess Azure Service Health resource impact and resilience.",
+                        "name":  "service-health-impact-mapper",
+                        "source":  "./plugins/service-health-impact-mapper"
+                    }
+                ]
 }
